@@ -1,0 +1,101 @@
+* {
+        box-sizing: inherit;
+        margin: 0;
+        padding: 0;
+}
+
+html {
+        font-size: 62.5%;
+        box-sizing: border-box;
+        font-family: sans-serif;
+}
+
+body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to bottom, #e7f5ff, #339af0);
+}
+
+.calculator {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 1rem;
+        width: 40rem;
+        height: 60rem;
+        background-color: #00000000;
+        /* box-shadow: 0px 20px 10px 10px #00000021; */
+}
+
+.container {
+        box-shadow: 0px 20px 20px 10px hsla(0, 0%, 0%, 0.1);
+        padding: 1rem;
+        background-color: #00000000;
+        border-radius: 0.5rem;
+}
+
+.container--display {
+        position: relative;
+        display: flex;
+        grid-column: 1/-1;
+        align-items: center;
+        justify-content: end;
+        font-size: 4.2rem;
+        background-color: #e7f5ff;
+        height: 100%;
+        width: 100%;
+        border-radius: 0.5rem;
+}
+
+.display {
+        color: #1971c2;
+        margin-right: 3rem;
+        text-shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.15);
+        overflow-x: scroll;
+        scrollbar-width: none;
+}
+
+.display::-webkit-scrollbar {
+        display: none;
+}
+
+.clear {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: #e7f5ff;
+
+        font-size: 1.8rem;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: #845ef7;
+        padding: 0.3rem;
+}
+
+.clear:hover {
+        background-color: #5f3dc4;
+}
+
+.btn.alert {
+        background-color: red;
+}
+
+.btn {
+        color: #e7f5ff;
+        height: 100%;
+        width: 100%;
+        font-size: 5rem;
+        border-radius: 0.5rem;
+        background-color: #1971c2;
+        border: none;
+        box-shadow: 0px 2px 2px 2px hsla(0, 0%, 0%, 0.25);
+        text-shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.5);
+}
+
+.btn:hover {
+        background-color: #1864ab;
+}
