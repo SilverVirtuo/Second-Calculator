@@ -1,6 +1,7 @@
 //Bugs
 //possible bug: wrong answers with long calculations!! (done?)
 //bug: when divided by 0 it works only with 0.0 (done?)
+//adding "." after on the calculated result(after inputting "=") doesnt work
 
 //To do:
 //add scrolling to display to be able to see the whole calculation (done)
@@ -244,8 +245,9 @@ buttonElement.forEach((button) =>
 
                         displayElement.textContent = inputArray[0] =
                                 Math.round(
-                                        (workArray[0] + Number.EPSILON) * 100
-                                ) / 100;
+                                        (workArray[0] + Number.EPSILON) *
+                                                10000000
+                                ) / 10000000;
                         // workArray[0];
                 }
         })
